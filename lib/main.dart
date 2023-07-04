@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_git_dev_practice/HomeScreen.dart';
+import 'HomeScreen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -26,6 +26,9 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
       ),
       home: HomeScreen(),
+      routes: {
+        '/second': (context) => ProductScreen(),
+      },
     );
   }
 }
